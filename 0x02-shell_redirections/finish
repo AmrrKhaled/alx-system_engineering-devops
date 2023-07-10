@@ -1,6 +1,6 @@
 #!/bin/bash
 read var
-chmod +x $var 
+chmod +x ${var} 
 git add .
 git commit -m "bash"
 git push
