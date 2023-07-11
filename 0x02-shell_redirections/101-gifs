@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name '*.gif' -printf '%f\n' | sort -f -d -k1,1 | cut -f1 -d'.' | uniq
+find . -type f -iname '*.gif' -printf '%f\n' | sed -e 's/\.gif$//' | LC_COLLATE=C sort -f
